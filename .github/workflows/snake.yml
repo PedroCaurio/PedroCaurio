@@ -12,14 +12,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      # ========================================================
+      # PASSO DE CORREÇÃO ADICIONADO AQUI
+      # Nós criamos o diretório 'dist' manualmente
+      # ========================================================
+      - name: Create 'dist' directory
+        run: mkdir dist
+
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Agora, quando a ação 'snk' tentar salvar o arquivo em 'dist/',
+          # ela tem certeza que a pasta existe.
           outputs: dist/github-contribution-grid-snake.svg
-          
-          # AQUI ESTÁ A CORREÇÃO:
-          # Juntamos a flag e o valor com '=' para formar um argumento único.
           args: >-
             --color-snake='#ff751f'
             --color-dots='#ff751f'
@@ -30,6 +36,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
           target_branch: output
+          # Este diretório 'dist' agora vai existir
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
