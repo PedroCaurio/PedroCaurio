@@ -71,5 +71,6 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PedroCaurio/PedroCaurio/output/dist/github-contribution-grid-snake.svg" alt="Snake Animation">
+  <h3 style="color: #ff751f;">📊 Recent Activity Graph</h3>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PedroCaurio&bg_color=212121&color=ffffff&line=ff751f&point=ffffff&hide_border=true&title_color=ff751f" alt="Gráfico de Atividade no GitHub de Pedro Caurio">
 </div>
