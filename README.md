@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=24&pause=1000&color=FF751F&center=true&vCenter=true&width=600&lines=Ol%C3%A1%2C+eu+sou+o+Pedro!+%F0%9F%91%8B;Desenvolvedor+Full-Stack+%26+Analista+de+Projetos;Especializando-me+em+Game+Development" alt="Animação de 'Hi there, I'm Pedro!'">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=24&pause=1000&color=FF751F&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Pedro!+%F0%9F%91%8B;Full-Stack+Developer+%26+Project+Analyst;Specializing+in+Game+Development" alt="Animação de 'Hi there, I'm Pedro!'">
   </a>
 </div>
 
@@ -22,8 +22,8 @@
   <a href="https://www.linkedin.com/in/pedro-caurio-3ab4a5260/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-ff751f?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://SEU-ITCHIO.itch.io/" target="_blank">
-    <img src="https://pedrocaurio.itch.io/" alt="Itch.io">
+  <a href="https://pedrocaurio.itch.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Itch.io-ff751f?style=for-the-badge&logo=itchdotio&logoColor=white" alt="Itch.io" alt="Itch.io">
   </a>
   <a href="https://www.instagram.com/cauriopedromartins/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-ff751f?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
