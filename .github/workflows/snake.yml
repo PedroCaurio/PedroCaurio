@@ -7,15 +7,19 @@ on:
 
 jobs:
   build:
+    # ========================================================
+    # PERMISSÃO ADICIONADA AQUI
+    # Esta linha é crucial. Ela dá ao workflow a permissão
+    # para "escrever" (push) o novo branch 'output' no seu repositório.
+    # ========================================================
+    permissions:
+      contents: write
+      
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # ========================================================
-      # PASSO DE CORREÇÃO ADICIONADO AQUI
-      # Nós criamos o diretório 'dist' manualmente
-      # ========================================================
       - name: Create 'dist' directory
         run: mkdir dist
 
@@ -23,8 +27,6 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # Agora, quando a ação 'snk' tentar salvar o arquivo em 'dist/',
-          # ela tem certeza que a pasta existe.
           outputs: dist/github-contribution-grid-snake.svg
           args: >-
             --color-snake='#ff751f'
@@ -36,7 +38,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
           target_branch: output
-          # Este diretório 'dist' agora vai existir
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
