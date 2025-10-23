@@ -71,5 +71,5 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/PedroCaurio/PedroCaurio/blob/output/github-contribution-grid-snake.svg" alt="Animação Snake das contribuições do GitHub">
+  <img src="https://github.com/PedroCaurio/PedroCaurio/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation">
 </div>
