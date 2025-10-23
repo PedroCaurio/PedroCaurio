@@ -1,5 +1,5 @@
 name: Generate Snake Animation
-
+        
 on:
   schedule:
     - cron: "0 0 * * *" # Roda todo dia à meia-noite
@@ -13,16 +13,19 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate Snake
-        uses: Platane/snk@v2
+        # ATUALIZADO PARA v3 E USANDO 'args'
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/github-contribution-grid-snake.svg
-          # Aqui você pode customizar as cores da cobra!
-          # Deixei laranja e preto para combinar com seu tema.
-          snake_color: '#ff751f'
-          grid_color: '#212121'
-          dot_color: '#ff751f'
-          bg_color: '#212121'
+          
+          # AQUI ESTÁ A CORREÇÃO:
+          # Todas as cores agora são passadas dentro de 'args'
+          args: >-
+            --color-snake '#ff751f'
+            --color-dots '#ff751f'
+            --color-grid '#212121'
+            --color-bg '#212121'
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.5.0
