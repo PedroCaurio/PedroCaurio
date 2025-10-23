@@ -71,5 +71,5 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PedroCaurio/PedroCaurio/main/github-contribution-grid-snake.svg" alt="Snake Animation">
+  <img src="https://raw.githubusercontent.com/PedroCaurio/PedroCaurio/output/dist/github-contribution-grid-snake.svg" alt="Snake Animation">
 </div>
